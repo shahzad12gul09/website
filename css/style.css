@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Lexend, sans-serif;
+}
+:root{
+    --higher: #ffa03a;
+ }
+
+.heading{
+    font-size: 4.5rem;
+    padding: 50px 0 0 80px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+.highlight {
+    color: var(--higher);
+    display: inline-block;
+}
+
+.highlight:before {
+    content: url("line.png"); 
+    background: url(../img/line.png) no-repeat 0 100% / contain;
+    position: absolute; 
+    max-width: 24.9375rem;
+    height: .875rem;
+    top: 100%;
+    width: 115%;
+}
+
+.bttn{
+    padding: 1.0625rem 1.875rem;
+    box-shadow: #1c01b596 0px 7px 29px 0px;
+}
+
+
+.btn:before {
+    background-color: #1b01b5;
+    height: 200%;
+    border-radius: 100%;
+    opacity: .1;
+    transform: scale(.7) translateY(55%);
+    transition: all .4s cubic-bezier(0, 0, .31, .99);
+}
+
+.banner{
+    background-image: url(../img/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;   
+    margin-top: 6.5%;
+}
+.banner-stat{
+    background-image: url(../img/stat-bg.png);
+    background-repeat: no-repeat;
+    background-size:auto;
+}
+.card{
+    background-color: var(--higher);
+    color: white;
+    width: 85%;
+    margin: auto;
+}
+.icon{
+    width: fit-content;
+    padding: 10%;
+    width: 60%;
+    background-color: rgba(255, 255, 255, 0.144);
+    border: 1px dashed white;
+}
+.cards{
+    position: absolute;
+    top: 25%;
+    right: 6%;
+}
+.para{
+    font-size: 18px;
+}
+
+.counter{
+    font-size: 2.8rem;
+}
+.category{
+    border: 2px solid rgb(235, 235, 235);
+    cursor: pointer;
+}
+
+.category:hover{
+    border: none;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.category:hover .icon-lg{
+    background-color: var(--higher);
+    box-shadow: #ffa03a 0px 7px 29px 0px
+}
+.category:hover .svg{
+    fill: white;
+}
+.icon-lg{
+    width: fit-content;
+    padding: 20%;
+    background-color: #efefff;
+}
+.svg{
+    fill: blue;
+}
+
+@media screen and (max-width: 1000px){
+    .heading{
+        font-size: 3.5rem;
+        line-height: 1;
+    }
+    .highlight {
+        color: var(--higher);
+        display: inline-block;
+    }
+    
+    .highlight:before {
+        content: url("line.png"); 
+        background: url(../img/line.png) no-repeat 0 100% / contain;
+        position: absolute; 
+        max-width: 12.9375rem;
+        height: .875rem;
+        top: 100%;
+        width: 115%;
+    }
+    .cards{
+        position: absolute;
+        top: 63.5vh;
+        right: 0;
+    }
+    .card{
+        width: 100%;
+        margin: 0;
+    }
+}
+
+.banners{
+    position: relative;
+    background-image: url(../img/cta-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    padding: 0;
+    z-index: -1;
+}
+.overflow-container{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.744);
+    background:linear-gradient(to right, #0f0d1bfc,rgba(181, 181, 181, 0.069));
+    z-index: 99;
+}
+.bttns{
+    padding: 10px 2.3rem;
+    background-color: white;
+    border: none;
+    color: #6247ff;
+    font-size: large
+}
+@media screen and (max-width: 795px) {
+    .banner{
+        height: 60vh;   
+        margin-top: 6.5%;
+    }
+    .cards{
+        position: static;
+        top: 0%;
+    } 
+    .card{
+        background-color: var(--higher);
+        color: white;
+        width: 100%;
+    }
+}
