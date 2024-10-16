@@ -7,6 +7,8 @@
 }
 :root{
     --higher: #ffa03a;
+    /* --higher: #dfaa23; */
+    --secondary: #6045ff;
  }
 
 .heading{
@@ -32,12 +34,24 @@
 
 .bttn{
     padding: 1.0625rem 1.875rem;
-    box-shadow: #1c01b596 0px 7px 29px 0px;
+    background-color: var(--secondary);
+    color: white;
+    box-shadow: #6145ff7e 0px 7px 29px 0px;
 }
-
-
-.btn:before {
-    background-color: #1b01b5;
+.bttn:hover{
+    background-color: #5c3ffe;
+    color: white;
+}
+.top{
+    background-color: var(--secondary);
+    color: white;
+}
+.top:hover{
+    background-color: #5c3ffe;
+    color: white;
+}
+.bttn:before {
+    background-color: var(--secondary);
     height: 200%;
     border-radius: 100%;
     opacity: .1;
@@ -104,9 +118,256 @@
     background-color: #efefff;
 }
 .svg{
-    fill: blue;
+    fill: var(--secondary);
 }
 
+
+.banners{
+    position: relative;
+    background-image: url(../img/cta-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    padding: 0;
+    z-index: -1;
+}
+.overflow-container{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.744);
+    background:linear-gradient(to right, #0f0d1bfc,rgba(181, 181, 181, 0.069));
+    z-index: 99;
+}
+.bttns{
+    padding: 10px 2.3rem;
+    background-color: white;
+    border: none;
+    color: var(--secondary);
+    font-size: large
+}
+.enrolled-student{
+    right: 20%;
+    top: 10%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.student{
+    width: 100%;
+    margin: auto;
+}
+.graduate{
+    width: fit-content;
+    padding: 20%;
+    background-color: var(--higher);
+    box-shadow: #ffa03a 0px 7px 29px 0px
+}
+.rating {
+    color: var(--higher);
+}
+
+.instructor-one{
+    background-image: url(../img/teacher2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+}
+.a{
+    text-decoration: none;
+    color: white;
+}
+.bg{
+    background-color: rgba(0, 0, 0, 0.198);
+    margin: 20px;
+    width: 90%;
+    padding: 9%;
+    cursor: pointer;
+    left: 0px;
+    bottom: 0;
+}
+
+.share{
+    width: fit-content;
+    padding: 20px;
+    background-color: var(--higher);
+    right: 15%;
+    top: 60%;
+    z-index: 99;
+    display: none;
+}
+.instructor-one:hover{
+    margin-top: -15px;
+    transition: 0.5s;
+}
+.instructor-one:hover .bg{
+    background-color: white;
+    transition: 0.5s;
+}
+.instructor-one:hover .share, .instructor-one:hover .a{
+    display: block;
+    color: black;
+    transition: 0.5s;
+}
+.instructor-two{
+    background-image: url(../img/teacher1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+}
+.instructor-two:hover{
+    margin-top: -15px;
+    transition: 0.5s;
+}
+.instructor-two:hover .bg{
+    background-color: white;
+    transition: 0.5s;
+}
+.instructor-two:hover .share, .instructor-two:hover .a{
+    display: block;
+    color: black;
+    transition: 0.5s;
+}
+.instructor-three{
+    background-image: url(../img/teacher3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+}
+.instructor-three:hover{
+    margin-top: -15px;
+    transition: 0.5s;
+}
+.instructor-three:hover .bg{
+    background-color: white;
+    transition: 0.5s;
+}
+.instructor-three:hover .share, .instructor-three:hover .a{
+    display: block;
+    color: black;
+    transition: 0.5s;
+}
+.activate{
+    border-bottom: 2px solid var(--secondary);
+    color: var(--secondary);
+}
+
+.toggle{
+    cursor: pointer;
+}
+
+.toggle:hover{
+    border-bottom: 2px solid var(--secondary);
+    color: var(--secondary);
+}
+
+.content{
+    border-left: 3px solid var(--secondary);
+    background-color: #f4f5f8;
+    padding: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.unorder li::marker{
+    color: var(--higher);
+}
+.geek{
+    width: 100%;
+    height: 400px;
+    /* margin: 0; */
+    padding: 0;
+}
+.geeks {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    /* margin: 0 auto; */
+}
+
+.geeks img {
+    width: 100%;
+}
+
+.blogs{
+    z-index: 99;
+    width: 90%;
+    left: 0;
+    bottom: -70px;
+}
+
+.title{
+    color: black;
+}
+.title:hover{
+    color: var(--secondary);
+}
+
+.read{
+    color: var(--secondary);
+}
+.blog{
+    display: none;
+}
+
+.geeks:hover img {
+    transform: scale(1.1);
+    transition: 0.5s all ease-in-out;
+}
+
+.blog:hover .img{
+    transform: scale(1.1);
+    transition: 0.5s all ease-in-out;
+}
+.geek:hover .blog{
+    display: block;
+}
+.bg-news{
+    background-color: var(--secondary);
+    /* height: 320px; */
+}
+
+.newsleft{
+    background-image: url(../img/newsleft.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* background-position: center; */
+    /* width: 100%; */
+    height: 300px;
+}
+
+.newsright{
+    background-image: url(../img/newsright.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    /* width: 100%; */
+    height: 330px;
+}
+
+.line:before {
+    content: url("line.png"); 
+    background: url(../img/line-bg-white.png) no-repeat 0 100% / contain;
+    position: absolute; 
+    max-width: 24.9375rem;
+    height: .875rem;
+    top: 100%;
+    width: 115%;
+}
+.subscribe{
+    background-color: var(--higher);
+    border: none;
+    color: white;
+}
+.form-control{
+    padding: 15px;
+}
 @media screen and (max-width: 1000px){
     .heading{
         font-size: 3.5rem;
@@ -137,33 +398,17 @@
     }
 }
 
-.banners{
-    position: relative;
-    background-image: url(../img/cta-bg.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 70vh;
-    padding: 0;
-    z-index: -1;
+@media screen and (max-width: 991px){
+    .enrolled-student{
+        right: 0;
+        top: 0;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+    .student{
+        width: 50%;
+    }
 }
-.overflow-container{
-    position: absolute;
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.744);
-    background:linear-gradient(to right, #0f0d1bfc,rgba(181, 181, 181, 0.069));
-    z-index: 99;
-}
-.bttns{
-    padding: 10px 2.3rem;
-    background-color: white;
-    border: none;
-    color: #6247ff;
-    font-size: large
-}
+
 @media screen and (max-width: 795px) {
     .banner{
         height: 60vh;   
@@ -177,5 +422,35 @@
         background-color: var(--higher);
         color: white;
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .page{
+        margin-top: 120px;
+    }
+    .newsleft{
+        height: 250px;
+    }
+    .newsright{
+        height: 250px;
+    }
+    .lines{
+        font-size: 2.5rem;
+    }
+    .line{
+        content: url("line.png"); 
+        background: url(../img/line-bg-white.png) no-repeat 0 100% / contain;
+        position: absolute; 
+        max-width: 24.9375rem;
+        height: .875rem;
+        top: 100%;
+        width: 115%;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .page{
+        margin-top: 160px;
     }
 }
